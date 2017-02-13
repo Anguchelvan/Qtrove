@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm-3" ng-if="toggle=='true'">
+     	<p>second question</p>
+    </div>
+    <div class="col-sm-3">
+		<div class="dropdown" ng-if="toggle=='true'">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+				Basket Ball
+				<span class="caret"></span>
+			</button>
+
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ng-repeat="d in basketball">
+				<li><a href="#" ng-click=toggleFun1(d.d)>{{d.d}}</a></li>
+				<li><a href="#" ng-click=toggleFun1(d.e)>{{d.e}}</a></li>
+				<li><a href="#" ng-click=toggleFun1(d.f)>{{d.f}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<br/>
+<div class="row">
+    <div class="col-sm-3" ng-if="toggle1=='false'">
+     	<p>Third question</p>
+    </div>
+    <div class="col-sm-3">
+		<div class="dropdown" >
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-if="toggle1=='false'">
+				Carrom
+				<span class="caret"></span>
+			</button>
+
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" ng-repeat="e in carrom">
+				<li><a href="#" ng-click="toggleFin(e.g)">{{e.g}}</a></li>
+				<li><a href="#"  ng-click="toggleFin(e.h)">{{e.h}}</a></li>
+				<li><a href="#"  ng-click="toggleFin(e.i)">{{e.i}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

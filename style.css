@@ -1,0 +1,18 @@
+.btn-default
+{
+	border:none !important;
+	border-bottom: 1px solid black !important;
+	outline:none !important;
+}
+/*.open>.dropdown-toggle.btn-default {
+{
+	border:none !important;
+	border-bottom: 1px solid black !important;
+	background:none !important;
+}*/
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+   
+    background-color: #fff !important;
+    outline:none !important;
+}
